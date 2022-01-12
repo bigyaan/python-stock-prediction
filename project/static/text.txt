@@ -1,0 +1,1 @@
+Hello this is stock prediction page.(From static file)

@@ -1,0 +1,206 @@
+.ad{
+    height:15%;
+   width:60%;
+    margin-top:5px;
+    margin-left: 300px;
+   
+    
+    }
+    .newsim
+    {
+        
+      margin-top: 5px;
+        margin-left: 100px;
+    }
+    .index
+    {
+        margin-left: 100px;
+        background-color: rgb(239, 230, 248);
+        margin-right:100px;
+        margin-top: 5px;
+    }
+    .adv
+    {
+        margin-left: 100px;
+        margin-top: 10px;;
+        height:270px;
+        width :140px;
+        cursor: pointer;
+        background-color: cornflowerblue;
+    }
+
+    .ad:hover
+    {
+       
+        opacity:0.5;
+    transition:2.5s;
+    cursor: pointer;
+        
+    }
+    .hlo:hover{
+
+        cursor: pointer;
+    }
+  .hlo
+  {
+      width:500px;
+      height: 320px;
+     
+  }
+  .ne
+  {
+      float:right;
+      margin-right: 20px;
+  }
+.bot
+{
+    width:400px;
+    margin-left: 100px;
+    margin-top: 5px;
+}
+  .newss
+  {
+    float:right;
+   
+  }
+    .news
+    {
+    background-color:rgb(239, 230, 248) ;
+    width: 420px;
+    border:solid;
+    border-color:white ;
+    border-radius: 5px;
+    height: 80px;
+    border-bottom: 2px solid black;
+    margin-right: 20px;
+    color:rgb(89, 83, 168);
+    }
+
+    .news:hover
+    {
+        background-color: rgb(130, 79, 134);
+        color:rgb(206, 188, 241);
+        cursor:pointer;
+    }
+ 
+    .hi
+    {
+       cursor:default;
+        background-color: rgb(69, 148, 150);
+       
+    }
+    .hloo
+    {
+        width:110px;
+      
+    }
+    .textt
+    {
+        width:400px;
+        position:absolute;
+        bottom:25f0px;
+        left:150px;
+        text-align: center;
+        color:white;
+        font-size: larger;
+        margin-top: 180px;;
+    }
+    .writ
+    {
+        font-size: medium;
+    }
+    .bb
+    {
+        background-color: rgb(70, 70, 82);
+    }
+    .color,.color:hover
+    {
+    text-decoration: none;
+    color:inherit;
+    }
+  .botnews
+  {
+      width:250px;
+      float:right;
+      margin-right:20px;
+      margin-top: 10px;
+      background-color: silver;
+      height:270px;
+  }
+  .botnews:hover
+  {
+      background-color: rgb(163, 110, 167);
+  }
+  .hlooo
+  {
+      margin-top: 5px;
+      margin-left:10px;
+      margin-right:10px;
+      width:230px;
+      height:140px;
+  }
+  .picl
+  {
+      font-size: larger;
+      margin-left: 10px;
+    margin-right: 10px ;
+  }
+  .desc
+  {
+      margin-right: 10px;
+      margin-left: 15px;
+      margin top:10px;
+     
+     
+  }
+    .oh
+    {
+     
+        margin-right: 0px;
+        background-color: silver;
+        padding:0px;
+        margin-top: 3px;
+        border:1px solid black ;
+        margin-bottom: 0px;
+    }
+    .more
+    {
+     height:10px;
+     cursor:pointer;
+    }
+
+    .more:hover
+    {
+    color:rgb(89, 83, 168);
+  
+    }
+    .ro 
+    {
+        cursor:pointer;
+    }
+    .ro:hover
+    {
+        background-color: rgb(96, 136, 168);
+    }
+
+    .ohh
+    {
+        float:right;
+        width:360px;
+       margin-right: 100px;
+      
+    }
+.footer
+{
+    background-color: silver;
+    width:87%;
+    height:10%;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right:100px;
+}
+.footer:hover
+{
+    background-color: rgb(94, 214, 214);
+    cursor: pointer;
+}
