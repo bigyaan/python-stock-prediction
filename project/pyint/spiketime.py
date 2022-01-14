@@ -35,7 +35,7 @@ def TimeSlot():
     #if config_global.top_n_stocks.index.size:
         #config_global.top_n_stocks_dup = config_global.top_n_stocks.copy(deep = True)
         #iterlist=config_global.top_n_stocks['symbol'].to_list()
-    iterlist=pd.read_csv('C:\\Users\\user\\Downloads\\stock\\stock\\project\\pyint\\list.csv')
+    iterlist=pd.read_csv(r'C:\Users\DELL\Desktop\collection\python-stock-prediction\project\pyint\list.csv')
     
     for symbol in iterlist:
         sym=yf.Ticker(symbol)
@@ -62,7 +62,8 @@ def TimeSlot():
         avg=High_table.mean(axis=0)
         print("\n",avg)
         #config_spiketime.req_slot=avg.idxmax()
-        return avg.idmax()
+        return avg.idxgitmax()
+
 data = TimeSlot()
 print(data)
         
