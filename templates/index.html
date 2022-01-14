@@ -1,0 +1,464 @@
+<link rel="stylesheet" type="text/css" href="/static/design.css">
+{% extends 'base.html' %}
+{% block title %}
+Home
+ {% endblock title %}
+
+{% block body%}
+<p><em><b>{{data}}</b></em></p>
+
+<img class="ad" src="/static/img1.jpg" alt="" width="1700" height="90">
+<div class="index">
+<nav class="navbar navbar-expand-lg navbar-light bg-silver">
+  <div class="container-fluid ">
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link" href="#"><b>S&P index</b></a>
+            </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><b>DOW Jones</b></a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>NASDAQ</b></a>
+      </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <b>Other indices</b>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">GOLD       :120</a></li>
+            <li><hr class="dropdown-divider"></li> 
+            <li><a class="dropdown-item" href="#">CRUDE OIL  :800</a></li>
+            <li><hr class="dropdown-divider"></li> 
+            <li><a class="dropdown-item" href="#">RUSSEL 2000:899</a></li>
+            <li><hr class="dropdown-divider"></li> 
+            <li><a class="dropdown-item" href="#"> SILVER     :200</a></li>
+          
+           
+          </ul>
+        </li>
+
+
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+</div>
+<div  class="wow">
+   
+<div class="ohh">
+  <div class="oh">
+    <table class="table">
+    <tr class="hi">
+      <th>
+        Top Gainer
+      </th>
+    </tr>
+    <tr >
+      <th class="bb">
+        Symbol
+      </th>
+      <th class="bb">
+        LTP
+      </th>
+      <th class="bb">
+        Point Change
+      </th>
+      <th class="bb">
+        % change
+      </th>
+    </tr>
+    <tr class="ro">
+      <td class="aa">
+        PICL
+      </td>
+      <td class="aa">
+      1000
+      </td>
+      <td class="aa">
+        100
+        </td>
+        <td class="aa">
+         10%
+          </td>
+    </tr>
+    <tr class="ro">
+      <td class="aa">
+       NICL
+      </td>
+      <td class="aa">
+      1200
+      </td>
+      <td class="aa">
+        67
+        </td>
+        <td class="aa">
+         6%
+          </td>
+    </tr>
+    <tr class="ro">
+      <td class="aa">
+        CBBL
+      </td>
+      <td class="aa">
+        2000
+      </td>
+      <td class="aa">
+        100
+        </td>
+        <td class="aa">
+          5%
+          </td>
+    </tr>
+    <tr class="ro">
+      <td class="aa">
+        NUBL
+      </td>
+      <td class="aa">
+      1800
+      </td>
+      <td class="aa">
+        67
+        </td>
+        <td class="aa">
+        2%
+          </td>
+    </tr>
+
+    <tr >
+      <th>
+        <p class="more">
+     <u> See More</u>...</p>
+      </th>
+<td></td>
+<td></td>
+<td></td>
+    </tr>
+  </table>
+  </div>
+
+  <div class="oh"><table class="table">
+    <tr class="hi">
+      <th>
+        Top Looser
+      </th>
+    </tr>
+    <tr >
+      <th class="bb">
+        Symbol
+      </th>
+      <th class="bb">
+        LTP
+      </th>
+      <th class="bb">
+        Point Change
+      </th>
+      <th class="bb">
+        % change
+      </th>
+    </tr>
+
+    <tr class="ro">
+      <td class="aa">
+        AKPL
+      </td>
+      <td class="aa">
+      500
+      </td>
+      <td class="aa">
+        -100
+        </td>
+        <td class="aa">
+        -10%
+          </td>
+    </tr>
+    <tr class="ro">
+      <td class="aa">
+        MLBS
+      </td>
+      <td class="aa">
+        1500
+      </td>
+      <td class="aa">
+        -78
+        </td>
+        <td class="aa">
+          -5%
+        </td>
+    </tr>
+    <tr class="ro">
+      <td class="aa">
+       ALICL
+      </td>
+      <td class="aa">
+        1400
+      </td>
+      <td class="aa">
+        -177
+        </td>
+        <td class="aa">
+          -5%
+        </td>
+    </tr>
+    <tr class="ro">
+      <td class="aa">
+        NUBL
+      </td>
+      <td class="aa">
+      1800
+      </td>
+      <td class="aa">
+        -67
+        </td>
+        <td class="aa">
+        -2%
+         </td>
+    </tr>
+    <tr >
+      <th>
+        <p class="more">
+      <u>See More</u>...</p>
+      </th>
+<td></td>
+<td></td>
+<td></td>
+    </tr>
+</table>
+  </div>
+
+ 
+  <div class="oh">
+    <table class="table">
+    <tr class="hi">
+      <th>
+        Top turnover
+      </th>
+    </tr>
+
+    <tr>
+      <th class="bb">
+        Symbol
+      </th>
+      <th class="bb">
+        Turnover
+      </th>
+      <th class="bb">
+        LTP
+      </th>
+    </tr>
+
+    <tr class="ro">
+      <td class="aa">
+        PICL
+      </td>
+      <td class="aa">
+        960000
+      </td>
+      <td class="aa">
+        960
+      </td>
+    </tr>
+    <tr class="ro">
+      <td class="aa">
+        RADHI
+      </td>
+      <td class="aa">
+       5600
+      </td>
+      <td class="aa">
+       1000
+      </td>
+    </tr>
+    <tr class="ro">
+      <td class="aa">
+        CBBL
+      </td>
+      <td class="aa">
+        250000
+      </td>
+      <td class="aa">
+        567
+      </td>
+    </tr>
+
+      <tr class="ro">
+      <td class="aa">
+        CBL
+      </td>
+      <td class="aa">
+        250000
+      </td>
+      <td class="aa">
+        2899
+      </td>
+    </tr>
+    <tr>
+      <th>
+      <p  class="more">
+     <u> See More</u>...</p> 
+      </th>
+<td></td>
+<td></td>
+<td></td>
+    </tr>
+  
+  </table>
+  </div>
+
+</div>
+  
+
+<div>
+<div class="newss">
+      <div class="news">
+        <a class="color"  href="/static/live.csv" >
+          <p >
+         <img class="hloo" src="/static/img5.jpg" >
+          <b>NEPSE at its all time high...</b></p>
+        </a>
+      </div>
+      <div class="news">
+        <a class="color" href="/static/news1.txt" >
+          <p >
+            <img class="hloo" src="/static/sebon.jpg" >
+            <b>SEBON approved right share of RADHI . ..</b></p>
+        </a>
+      </div>
+      <div class="news">
+        <a class="color" href="/static/news1.txt" >
+          <p>
+            <img class="hloo" src="/static/divi.jpg" >
+            <b>CBL announced 50% dividend...</b></p>
+        </a>
+      </div>
+      <div class="news">
+        <a class="color" href="/static/news1.txt" >
+          <p>
+            <img class="hloo" src="/static/sahas.jpg" >
+            <b>SAHAS announced 7th AGM....</b></p>
+        </a>
+      </div>
+
+    </div>
+<div class="newsim">
+  <a class="color" href="/static/news1.txt" >
+  <div class="textt">
+    <b>CBBL announced 50% bonus share and 50% cash to its holders soon......</b><br>
+    <p class="writ">Good news for CBBL share holders....</p>
+  </div>
+  <img class="hlo" src="/static/img3.jpg" >
+  </a>
+</div>
+
+
+<div class="botnews">
+  <a class="color" href="/static/news1.txt" >
+   
+      <img class="hlooo" src="/static/picl.jpg" >
+      <p class="picl">
+      <b>PICL announced 1:1 right share....</b><br>
+    </p>
+    <div class="desc">
+      Good news for PICL share holders.....
+    </div>
+
+  </a>
+</div>
+
+
+<div class="botnews">
+  <a class="color" href="/static/news1.txt" >
+   
+      <img class="hlooo" src="/static/fin.jpg" >
+      <p class="picl">
+      <b>Finance minister seems positive towards ...</b><br>
+    </p>
+    <div class="desc">
+      On the ocassion of anniversary of ICAN........
+    </div>
+
+  </a>
+</div>
+<div>
+  <img class="bot" src="/static/ad.jpg" >
+</div>
+
+<div class="botnews">
+  <a class="color" href="/static/news1.txt" >
+   
+      <img class="hlooo" src="/static/img.jpg" >
+      <p class="picl">
+      <b>Finance minister seems positive towards ...</b><br>
+    </p>
+    <div class="desc">
+      On the ocassion of anniversary of ICAN........
+    </div>
+
+  </a>
+</div>
+<div class="botnews">
+  <a class="color" href="/static/news1.txt" >
+   
+      <img class="hlooo" src="/static/img5.jpg" >
+      <p class="picl">
+      <b>Finance minister seems positive towards ...</b><br>
+    </p>
+    <div class="desc">
+      On the ocassion of anniversary of ICAN........
+    </div>
+
+  </a>
+</div>
+<div class="botnews">
+  <a class="color" href="/static/news1.txt" >
+   
+      <img class="hlooo" src="/static/img4.jpg" >
+      <p class="picl">
+      <b>Finance minister seems positive towards ...</b><br>
+    </p>
+    <div class="desc">
+      On the ocassion of anniversary of ICAN........
+    </div>
+
+  </a>
+</div>
+
+<div >
+<img class="adv" src="/static/adv.jpg" >
+</div>
+
+</div>
+
+</div>
+<div>
+
+</div>
+<div class="footer">
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+    </footer>
+  </div>
+</div>
+{% endblock body %}

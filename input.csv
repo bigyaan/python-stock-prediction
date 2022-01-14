@@ -1,0 +1,14 @@
+,value
+config_userinput.USER_INPUT_start_date,2017-04-05
+config_userinput.USER_INPUT_end_date,2018-09-08
+config_userinput.USER_INPUT_compute_percent_chance,y
+config_userinput.USER_INPUT_PERCENT_CHANCE_VALUE,4.0
+config_userinput.USER_INPUT_AVERAGE_NO_OF_DAYS_UP_THRESHOLD,6
+config_userinput.USER_INPUT_write_csv,n
+config_userinput.USER_INPUT_NO_OF_TOP_FILTERED_STOCKS,0
+config_userinput.USER_INPUT_open_browser,
+config_userinput.USER_INPUT_print_info_for_top_n_stocks,
+config_userinput.USER_INPUT_write_csv_with_conditions,
+config_userinput.USER_INPUT_market_capital,0
+config_userinput.USER_INPUT_fiftyTwoWeeksHigh,0
+config_userinput.USER_INPUT_fiftyTwoWeeksLow,0

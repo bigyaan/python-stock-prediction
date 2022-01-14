@@ -1,0 +1,495 @@
+<link rel="stylesheet" type="text/css" href="/static/market1.css">
+{% extends 'base.html' %}
+{% block title %}
+Market
+ {% endblock title %}
+{% block body%}
+<div class="index">
+  <nav class="navbar navbar-expand-lg navbar-light bg-silver">
+    <div class="container-fluid ">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           
+        
+            <li class="nav-item">
+                <a class="nav-link" href="#"><font color= rgb(19, 19, 41)><b>S&P index</font><br>5,000</b></a>
+              </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b><font color= rgb(19, 19, 41)>DOW Jones:</font><br>320</b></a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><b><font color= rgb(19, 19, 41)>NASDAQ:</font><br>450</b></a>
+        </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b><font color= rgb(19, 19, 41)>Other indices</font></b>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)>GOLD       :</font>120</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)>CRUDE OIL  :</font>800</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)>RUSSEL 2000:</font>899</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)> SILVER     :</font>200</a></li>
+  
+
+             
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b><font color= rgb(19, 19, 41)>Other data</font></b>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)>Today's floorsheet</font></a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)>Datewise indices</font></a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)>Stock Trading</font></a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)> Market capitalization by date</font></a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)> N Days's Trading Average Price</font></a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)> Today's Price</font></a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)> Market Depth</font></a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)> Sectorwise summary</font></a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#"><font color= rgb(19, 19, 41)> Market Summary</font></a></li>
+             
+            
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b><font color= rgb(19, 19, 41) >Market Depth</font><br></b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b><font color= rgb(19, 19, 41)>Floorsheet</font><br></b></a>
+          </li>
+
+          <div class="turn">
+         
+            <li class="nav-item">
+              <a class="nav-link" href="#"><font color= rgb(19, 19, 41)><b>Total turnovers:</font>7,812,566,234</b></a>
+              <a class="nav-link" href="#"><font color= rgb(19, 19, 41)><b>Total volume:</font> 11678</b></a>
+            </li>
+   
+          </div>
+          <div class="stat">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><font color= rgb(19, 19, 41)><b>Market Status:</font> Open</b></a>
+            <a class="nav-link" href="#"><font color= rgb(19, 19, 41)><b>Time:</font> 11:05:45</b></a>
+          </li>
+       
+        </div>
+
+
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div>
+<div class="newss">
+  <div class="news1">
+    <a class="color"  href="/static/live.csv" >
+      <p >
+     <img class="hloo" src="/static/img5.jpg" >
+      <b>NEPSE at its all time high...</b></p>
+    </a>
+  </div>
+  <div class="news2">
+    <a class="color" href="/static/news1.txt" >
+      <p >
+        <img class="hloo" src="/static/sebon.jpg" >
+        <b>SEBON approved right share of RADHI . ..</b></p>
+    </a>
+  </div>
+  <div class="news1">
+    <a class="color" href="/static/news1.txt" >
+      <p>
+        <img class="hloo" src="/static/img3.jpg" >
+        <b>Technical analysis of future market...</b></p>
+    </a>
+  </div>
+  <div class="news2">
+    <a class="color" href="/static/news1.txt" >
+      <p>
+        <img class="hloo" src="/static/sahas.jpg" >
+        <b>SAHAS announced 7th AGM....</b></p>
+    </a>
+  </div>
+  <div class="news1">
+    <a class="color" href="/static/news1.txt" >
+      <p>
+        <img class="hloo" src="/static/divi.jpg" >
+        <b>CBL announced 50% dividend...</b></p>
+    </a>
+  </div>
+</div>
+
+<div >
+  <table class="bott">
+    <tr>
+      <td>
+            <img class="marim" src="/static/graph.jpg" >
+
+</td>
+</tr>
+  </table>
+  <div>
+<table class="comp">
+<tr >
+  <td>
+<table class="adv">
+<tr>
+  <td>
+    <b>Unchanged:<br>45</b>
+  
+</td>
+</tr>
+</table>
+
+<table class="adv">
+<tr>
+  <td><b>
+Decreased:<br><font color=Red>98</font></b>
+</td>
+</tr>
+
+</table>
+<table class="adv">
+<tr>
+  <td><b>
+Increased:<br><font color=Green>189</font></b>
+</td>
+</tr>
+</table>
+</td>
+
+ </tr>
+</table>
+</div>
+
+<div class="righ" >
+  <table class="summ">
+    <tr >
+      <td colspan="2" class="marke">
+        <b>Market Summary</b>
+      </td>
+
+    </tr>
+    <tr class="det">
+<td class="bord">
+<b>Total turnovers: 23,221,35,783</b>
+</td>
+<td class="bord">
+  <b>Total volume: 121,23,463</b>
+</td>
+    </tr>
+    <tr class="det">
+<td class="bord">
+  <b>Total transactions: 3,45,566</b>
+</td>
+<td class="bord">
+  <b>Total market cap.: 1,342,346,37,476</b>
+</td>
+    </tr>
+    <tr class="det">
+<td class="bord">
+  <b>Total scripts traded: 2,45,456</b>
+</td>
+<td class="bord">
+  <b>Total float market cap.: 3,256,93,224.657</b>
+</td>
+    </tr>
+  </table>
+
+  <div class="subindi">
+    <table class="subin">
+      <tr  class="headi">
+        <th colspan="3">
+        Sub-indices
+      </th>
+      </tr>
+    <tr class="roww">
+ <th class="col">
+   Banking Sector
+ </th>
+ <th class="col">
+   1600
+ </th>
+<th class="col">
+  -1.77%
+</th>
+</tr>
+
+<tr class="roww">
+  <th class="col">
+    Microfinance Sector
+  </th>
+  <th class="col">
+    2600
+  </th>
+ <th class="col">
+   2.77%
+ </th>
+ </tr>
+ <tr class="roww">
+  <th class="col">
+    Hydro Sector
+  </th>
+  <th class="col">
+    1890
+  </th>
+ <th class="col">
+   1.4567%
+ </th>
+ </tr>
+ <tr class="roww">
+  <th class="col">
+   Life-Insurance 
+  </th>
+  <th class="col">
+    2300
+  </th>
+ <th class="col">
+   1.2347%
+ </th>
+ </tr>
+ <tr class="roww">
+  <th class="col">
+    Non-life Insurance 
+  </th>
+  <th class="col">
+    2300
+  </th>
+ <th class="col">
+   -1.2347%
+ </th>
+ </tr>
+ <tr class="roww">
+  <th class="col">
+    Finance Sector
+  </th>
+  <th class="col">
+    2300
+  </th>
+ <th class="col">
+   1.2347%
+ </th>
+ </tr>
+    </table>
+    </div>
+</div>
+
+
+
+<div >
+<table class="live">
+<tr class="ro" >
+  <th class="bor">
+Ticker
+  </th>
+  <th class="bor">
+   Close
+  </th>
+<th class="bor">
+  Open
+</th>
+<th class="bor">
+  High
+</th>
+<th class="bor">
+  Low
+</th>
+<th class="bor">
+  Change
+</th>
+<th class="bor">
+ %change
+</th>
+</tr>
+
+<tr class="roo" >
+  <th class="borde">
+AAPL
+  </th>
+<td class="borde">
+ 235
+</td>
+<td class="borde">
+  259
+</td>
+<td class="borde">
+  230
+</td>
+<td class="borde">
+ 12,788
+</td>
+<td class="borde">
+  23
+ </td>
+ <td class="borde">
+  12
+ </td>
+</tr>
+<tr class="roo" >
+  <th class="borde">
+CBBL
+  </th>
+<td class="borde">
+ 235
+</td>
+<td class="borde">
+  259
+</td>
+<td class="borde">
+  230
+</th>
+<td class="borde">
+ 12,788
+</td>
+<td class="borde">
+  22
+ </td>
+ <td class="borde">
+  1
+ </td>
+</tr>
+<tr class="roo" >
+  <th class="borde">
+AKPL
+  </th>
+<td class="borde">
+ 235
+</td>
+<td class="borde">
+  259
+</td>
+<td class="borde">
+  230
+</th>
+<td class="borde">
+ 12,788
+</td>
+<td class="borde">
+  22
+ </td>
+ <td class="borde">
+  1
+ </td>
+</tr>
+<tr class="roo" >
+  <th class="borde">
+HIDCL
+  </th>
+<td class="borde">
+ 235
+</td>
+<td class="borde">
+  259
+</td>
+<td class="borde">
+  230
+</th>
+<td class="borde">
+ 12,788
+</td>
+<td class="borde">
+  22
+ </td>
+ <td class="borde">
+  1
+ </td>
+</tr>
+<tr class="roo" >
+  <th class="borde">
+ALICL
+  </th>
+<td class="borde">
+ 235
+</td>
+<td class="borde">
+  259
+</td>
+<td class="borde">
+  230
+</th>
+<td class="borde">
+ 12,788
+</td>
+<td class="borde">
+  22
+ </td>
+ <td class="borde">
+  1
+ </td>
+</tr>
+<tr class="roo" >
+  <th class="borde">
+PICL
+  </th>
+<td class="borde">
+ 235
+</td>
+<td class="borde">
+  259
+</td>
+<td class="borde">
+  230
+</th>
+<td class="borde">
+ 12,788
+</td>
+<td class="borde">
+  88
+ </td>
+ <td class="borde">
+  8
+ </td>
+</tr>
+<tr class="roo" >
+  <th class="borde">
+NUBL
+  </th>
+<td class="borde">
+ 365
+</td>
+<td class="borde">
+  259
+</td>
+<td class="borde">
+  230
+</th>
+<td class="borde">
+ 12,788
+</td>
+<td class="borde">
+  88
+ </td>
+ <td class="borde">
+  6
+ </td>
+</tr>
+<tr>
+
+</tr>
+</table>
+
+</div>
+
+</div>
+{% endblock body %}
