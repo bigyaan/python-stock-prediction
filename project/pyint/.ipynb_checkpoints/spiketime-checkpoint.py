@@ -1,6 +1,6 @@
 #import the necessary packages:
-from .config import config_global
-from .config import config_spiketime
+#from .config import config_global
+#from .config import config_spiketime
 
 import datetime as dt
 from datetime import datetime,date,time 
@@ -35,7 +35,7 @@ def TimeSlot():
     #if config_global.top_n_stocks.index.size:
         #config_global.top_n_stocks_dup = config_global.top_n_stocks.copy(deep = True)
         #iterlist=config_global.top_n_stocks['symbol'].to_list()
-    iterlist=
+    iterlist=pd.read_csv(r'C:\Users\DELL\Desktop\collection\python-stock-prediction\project\pyint\list.csv')
     
     for symbol in iterlist:
         sym=yf.Ticker(symbol)
@@ -58,13 +58,15 @@ def TimeSlot():
             High_table=day_spiketime(tin,High_table_init)
         
         
+        #find the average for each slot find the time slot with highest average over last 7 days
         avg=High_table.mean(axis=0)
-        print("\n", avg)
-        config_spiketime.req_slot=avg.idxmax()
-        return config_spiketime
+        print("\n",avg)
+        #config_spiketime.req_slot=avg.idxmax()
+        return avg.idxmax()
 
-# data = TimeSlot()
-# print(data)
+data = TimeSlot()
+print(data)
+        
 
         
         

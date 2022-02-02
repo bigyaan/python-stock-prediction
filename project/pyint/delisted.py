@@ -7,12 +7,9 @@ import csv
 def main_mod():
     th = pd.read_csv ('list.csv' , names=['symbols'] )
     it = th ["symbols"].tolist()
-    #print(it)
-    
     for sym in it:
         x_df = yf.download(tickers=sym,start='2020-12-12',end='2021-01-01',progress=False)
         check=x_df.empty
-        #print(check)
         
          
         if(check==False):

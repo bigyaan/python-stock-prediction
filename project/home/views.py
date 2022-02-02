@@ -5,6 +5,7 @@ from pyint.config import config_spiketime
 # Create your views here.
 def index(request):
     data = spiketime.TimeSlot()
+    print(data)
     return render (request,'index.html',{'data':data})
    #return HttpResponse("This is home page")
 def market(request):
