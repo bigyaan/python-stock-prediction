@@ -1,6 +1,6 @@
 import pandas as pd
 import yfinance as yf
-from pyint.config import config_global
+from config import config_global
 import numpy as np
 ##import matplotlib.pyplot as plts
 def main_mod():
@@ -33,5 +33,5 @@ def main_mod():
     df = pd.DataFrame(columns =['symbol','avg_per'])
     df["symbol"]=config_global.symbol_list
     df["avg_per"]=config_global.average_list
-    df[df["avg_per"]>3]                                               
-    print(df)
+    return df
+main_mod()
