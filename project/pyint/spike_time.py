@@ -8,7 +8,7 @@
 
 
 import datetime as dt
-from datetime import datetime,date,time 
+from datetime import datetime,date,time
 import yfinance as yf
 import warnings
 import pandas as pd
@@ -31,14 +31,15 @@ def day_spiketime(tin,High_table):
     if len(high)==12:
         High_table.loc[len(High_table)]=high
     
-    High_table.loc[len(High_table)]=high
+    # High_table.loc[len(High_table)]=high
     
     
 
     return(High_table)
 
 
-def TimeSlot():   
+def TimeSlot():
+    spike_dict={}
     top_n_stocks = pd.read_csv(
         'list.csv', names=['symbols'])
     top_n_stocks = pd.DataFrame(top_n_stocks )
@@ -73,9 +74,14 @@ def TimeSlot():
             
             #find the average for each slot find the time slot with highest average over last 7 days
             avg_spike_time=High_table.mean(axis=0)
-            print("\n",avg_spike_time)
-            req_slot=avg_spike_time.idxmax()
-            
+            # print("\n",avg_spike_time)
+            if avg_spike_time.dtype =="float64":
+                req_slot=avg_spike_time.idxmax()
+                spike_dict[symbol] = req_slot
+        # print(spike_dict)
+        return spike_dict
+
+
             
 
 

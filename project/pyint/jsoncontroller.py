@@ -7,6 +7,7 @@ import momentum as mom
 import uptrend_downtrend as updowntrend
 import highest_difference as h_difference
 import decreased_nm_percent as nm_per
+import spike_time as spt
 
 
 momentum_for_json = mom.carry_momentum()
@@ -23,16 +24,17 @@ high_difference_for_json = h_difference.main_mod()
 
 nm_per_for_json = nm_per.task_7_decreased_nm_per()
 
+spike_time_for_json=spt.TimeSlot()
 
 # this is main section and used to update value of all ticker listed in our csx and save in stock_pre_output.json
 top_n_stocks = pd.read_csv(
-        'list.csv', names=['symbols'])
-top_n_stocks=top_n_stocks['symbols'].to_list()[2]
-
+        'list.csv',names=["symbols"])
+top_n_stocks=top_n_stocks['symbols'].to_list()
+print(top_n_stocks)
 dic_json={}
 for count,sym_of_stock in enumerate(top_n_stocks):
     dic_json[sym_of_stock] = {}
-   
+    # print(sym_of_stock)
     # section 1 add momentum ----------------------------------------------------------------------------------
     for count_momentum in range (0,len(momentum_for_json)):
         if(sym_of_stock == momentum_for_json['symbol'][count_momentum]):
@@ -60,13 +62,21 @@ for count,sym_of_stock in enumerate(top_n_stocks):
             
     # section 4 high difference  ----------------------------------------------------------------------------------
     for count_nmper in range (0,len(nm_per_for_json)):
-        if(sym_of_stock == nm_per_for_json['stock'][count_nmper]):
+        if sym_of_stock == nm_per_for_json['stock'][count_nmper]:
             dic_json[sym_of_stock]['price_down_nmper'] = nm_per_for_json['price down'][count_nmper]
             dic_json[sym_of_stock]['stock_price_at_N_nmper'] = nm_per_for_json['stock price at N'][count_nmper]
             dic_json[sym_of_stock]['time_N_nmper'] = nm_per_for_json['time N'][count_nmper]
             dic_json[sym_of_stock]['stock_price_at_M_nmper'] = nm_per_for_json['stock price at M'][count_nmper]
             dic_json[sym_of_stock]['time_M_nmper'] = nm_per_for_json['time M'][count_nmper]
             dic_json[sym_of_stock]['closing_price_now_nmper'] = nm_per_for_json['closing price now'][count_nmper]
+    # section for spike time time slot------------------------------------------------------------------------------
+    for i in spike_time_for_json:
+        if sym_of_stock == i:
+            dic_json[sym_of_stock]['spike_time'] = spike_time_for_json[sym_of_stock]
+            break
+        else:
+            dic_json[sym_of_stock]['spike_time']=" "
+
             
 with open('stock_pre_output.json','w') as file:
     json.dump(dic_json,file)    
