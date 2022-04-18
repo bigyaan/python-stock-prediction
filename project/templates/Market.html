@@ -304,186 +304,67 @@ Increased:<br><font color=Green>189</font></b>
 Ticker
   </th>
   <th class="bor">
-   Close
+    momentum_high
   </th>
 <th class="bor">
-  Open
+  stock_trend
 </th>
 <th class="bor">
-  High
+  updown_percent
 </th>
 <th class="bor">
-  Low
+  high_difference_avg_per
 </th>
 <th class="bor">
-  Change
+  price_down_nmper
 </th>
 <th class="bor">
- %change
+  stock_price_at_N_nmper
 </th>
-</tr>
+<th class="bor">
+  closing_price_now_nmper
+</th>
+<th class="bor">
+  spike_time
+</th>
 
-<tr class="roo" >
-  <th class="borde">
-AAPL
-  </th>
-<td class="borde">
- 235
-</td>
-<td class="borde">
-  259
-</td>
-<td class="borde">
-  230
-</td>
-<td class="borde">
- 12,788
-</td>
-<td class="borde">
-  23
- </td>
- <td class="borde">
-  12
- </td>
 </tr>
 <tr class="roo" >
-  <th class="borde">
-CBBL
-  </th>
-<td class="borde">
- 235
+  {%for k,v  in market.items %}
+  <td class="borde">
+    {{k}}
+</td>
+  <td class="borde">
+       {{v.momentum_high}}
+  </td>
+  <td class="borde">
+    {{v.stock_trend}}
 </td>
 <td class="borde">
-  259
+  {{v.updown_percent}}
 </td>
 <td class="borde">
-  230
-</th>
-<td class="borde">
- 12,788
+  {{v.high_difference_avg_per}}
 </td>
 <td class="borde">
-  22
- </td>
- <td class="borde">
-  1
- </td>
+  {{v.price_down_nmper}}
+</td>
+<td class="borde">
+  {{v.stock_price_at_N_nmper}}
+</td>
+<td class="borde">
+  {{v.time_N_nmper}}
+</td>
+<td class="borde">
+  {{v.closing_price_now_nmper}}
+</td>
+<td class="borde">
+  {{v.spike_time}}
+</td>
 </tr>
-<tr class="roo" >
-  <th class="borde">
-AKPL
-  </th>
-<td class="borde">
- 235
-</td>
-<td class="borde">
-  259
-</td>
-<td class="borde">
-  230
-</th>
-<td class="borde">
- 12,788
-</td>
-<td class="borde">
-  22
- </td>
- <td class="borde">
-  1
- </td>
-</tr>
-<tr class="roo" >
-  <th class="borde">
-HIDCL
-  </th>
-<td class="borde">
- 235
-</td>
-<td class="borde">
-  259
-</td>
-<td class="borde">
-  230
-</th>
-<td class="borde">
- 12,788
-</td>
-<td class="borde">
-  22
- </td>
- <td class="borde">
-  1
- </td>
-</tr>
-<tr class="roo" >
-  <th class="borde">
-ALICL
-  </th>
-<td class="borde">
- 235
-</td>
-<td class="borde">
-  259
-</td>
-<td class="borde">
-  230
-</th>
-<td class="borde">
- 12,788
-</td>
-<td class="borde">
-  22
- </td>
- <td class="borde">
-  1
- </td>
-</tr>
-<tr class="roo" >
-  <th class="borde">
-PICL
-  </th>
-<td class="borde">
- 235
-</td>
-<td class="borde">
-  259
-</td>
-<td class="borde">
-  230
-</th>
-<td class="borde">
- 12,788
-</td>
-<td class="borde">
-  88
- </td>
- <td class="borde">
-  8
- </td>
-</tr>
-<tr class="roo" >
-  <th class="borde">
-NUBL
-  </th>
-<td class="borde">
- 365
-</td>
-<td class="borde">
-  259
-</td>
-<td class="borde">
-  230
-</th>
-<td class="borde">
- 12,788
-</td>
-<td class="borde">
-  88
- </td>
- <td class="borde">
-  6
- </td>
-</tr>
+{% endfor %}
+
+
 <tr>
 
 </tr>
