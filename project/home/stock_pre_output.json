@@ -1,0 +1,38 @@
+{
+  "AA": {
+    "momentum_high": 2.2122708376626736,
+    "stock_trend": "up",
+    "updown_percent": 2.2492496315502346,
+    "high_difference_avg_per": 4.79088707175523,
+    "price_down_nmper": -1.2848197173239089,
+    "stock_price_at_N_nmper": 78.2510986328125,
+    "time_N_nmper": "02/18/2022, 14:35:00",
+    "stock_price_at_M_nmper": 75.71649932861328,
+    "time_M_nmper": "02/18/2022, 09:36:00",
+    "closing_price_now_nmper": 78.19000244140625
+  },
+  "AMN": {
+    "momentum_high": 10.855232149750469,
+    "stock_trend": "up",
+    "updown_percent": 12.177082751492165,
+    "high_difference_avg_per": 3.7689769054065367,
+    "price_down_nmper": -4.212627037758231,
+    "stock_price_at_N_nmper": 109.16000366210938,
+    "time_N_nmper": "02/18/2022, 10:06:00",
+    "stock_price_at_M_nmper": 102.31999969482422,
+    "time_M_nmper": "02/18/2022, 12:42:00",
+    "closing_price_now_nmper": 104.6500015258789
+  },
+  "MSFT": {
+    "momentum_high": " ",
+    "stock_trend": "down",
+    "updown_percent": 1.0009299185305713,
+    "high_difference_avg_per": 3.0872588582957725,
+    "price_down_nmper": -1.4220174802231347,
+    "stock_price_at_N_nmper": 293.1700134277344,
+    "time_N_nmper": "02/18/2022, 09:30:00",
+    "stock_price_at_M_nmper": 286.4421081542969,
+    "time_M_nmper": "02/18/2022, 13:18:00",
+    "closing_price_now_nmper": 287.82000732421875
+  }
+}

@@ -19,3 +19,22 @@ def market(request):
     return render (request,'market.html',{'market':data})
 def news(request):
     return render (request,'news.html')
+
+def search(request):
+    if request.method == "POST":
+        searched = request.POST['searched']
+        f = open('pyint//stock_pre_output.json')
+        data = json.load(f)
+        return render (request,'search.html',{'searched':searched,'searched_data':data})
+    else:
+        return render (request, 'search.html')
+
+        
+def search2(request):
+    if request.method == "POST":
+        searched = request.POST['searched']
+        f = open('pyint//stock_pre_output.json')
+        data = json.load(f)
+        return render (request,'search2.html',{'searched':searched,'searched_data':data})
+    else:
+        return render (request, 'search2.html')
