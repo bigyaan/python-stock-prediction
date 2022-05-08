@@ -5,52 +5,77 @@ Search Results
  {% endblock title %}
 
  {% block body%}
-    Here is the Search Results is {{searched}}
+    Here is the Search Results {{searched}}
     <center>
-         {% if searched %}
+      <div >
+        <table class="live">
+        <tr class="ro" >
+          <th class="bor">
+        Ticker
+          </th>
+          <th class="bor">
+            momentum_high
+          </th>
+        <th class="bor">
+          stock_trend
+        </th>
+        <th class="bor">
+          updown_percent
+        </th>
+        <th class="bor">
+          high_difference_avg_per
+        </th>
+        <th class="bor">
+          price_down_nmper
+        </th>
+        <th class="bor">
+          stock_price_at_N_nmper
+        </th>
+        <th class="bor">
+          closing_price_now_nmper
+        </th>
+        <th class="bor">
+          spike_time
+        </th>
+        
+      {%for k,v  in searched_data.items %}
+         {% if searched == k  %}
             <h1>You searched for {{searched}} </h1> </br>          
             <h2>here are the details of the {{searched}} </h2>
-                  <table class="live">
-                     <tr class="ro" >
-                       <th class="bor">
-                     Ticker
-                       </th>
-                       <th class="bor">
-                         momentum_high
-                       </th>
-                     <th class="bor">
-                       stock_trend
-                     </th>
-                     <th class="bor">
-                       updown_percent
-                     </th>
-                     <th class="bor">
-                       high_difference_avg_per
-                     </th>
-                     <th class="bor">
-                       price_down_nmper
-                     </th>
-                     <th class="bor">
-                       stock_price_at_N_nmper
-                     </th>
-                     <th class="bor">
-                       closing_price_now_nmper
-                     </th>
-                     <th class="bor">
-                       spike_time
-                     </th>
-                    </tr>
-                     
-                       {%for k,v  in searched_data.items %}{{k.ticker}}{% endfor %}
-                      
-                   
-        
-
-
-                    </table>
-            {%else%}
-                <h1>You forget to search</h1>
+            <tr class="roo" >
+              <td class="borde">
+                {{k}}
+            </td>
+              <td class="borde">
+                   {{v.momentum_high}}
+              </td>
+              <td class="borde">
+                {{v.stock_trend}}
+            </td>
+            <td class="borde">
+              {{v.updown_percent}}
+            </td>
+            <td class="borde">
+              updown_percent
+            </td>
+            <td class="borde">
+              {{v.price_down_nmper}}
+            </td>
+            <td class="borde">
+              {{v.stock_price_at_N_nmper}}
+            </td>
+            <td class="borde">
+              {{v.time_N_nmper}}
+            </td>
+            <td class="borde">
+              {{v.closing_price_now_nmper}}
+            </td>
+            <td class="borde">
+              {{v.spike_time}}
+            </td>
+            </tr>
         {% endif %}
+      {% endfor %}
         
     </center>
  {% endblock body %}

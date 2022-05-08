@@ -331,6 +331,7 @@ Ticker
 </tr>
 <tr class="roo" >
   {%for k,v  in market.items %}
+  {% if k == %}
   <td class="borde">
     {{k}}
 </td>
@@ -344,7 +345,7 @@ Ticker
   {{v.updown_percent}}
 </td>
 <td class="borde">
-  {{v.high_difference_avg_per}}
+  updown_percent
 </td>
 <td class="borde">
   {{v.price_down_nmper}}
